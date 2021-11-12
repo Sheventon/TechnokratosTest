@@ -1,0 +1,145 @@
+POST http://localhost:8080/summary/add
+Content-Type: application/json
+
+{
+  "email": "tores.fernando.real@gmail.com",
+  "firstName": "Anton",
+  "lastName": "Sheverda",
+  "films": []
+}
+
+###
+POST http://localhost:8080/summary/add
+Content-Type: application/json
+
+{
+  "email": "tores.fernando.real@gmail.com",
+  "firstName": "Anton",
+  "lastName": "Sheverda",
+  "films": [
+    {
+      "originalLanguage": "en",
+      "originalTitle": "Harry Potter and the Philosopher's Stone",
+      "overview": "The story of a boy wizard from Hogwarts School",
+      "popularity": 240.854,
+      "posterPath": "/vkgM120mI0RH07njaFFlzG8wU4y.jpg",
+      "releaseDate": "2001-11-16",
+      "title": "Гарри Поттер и Филосовский камень",
+      "video": false,
+      "voteAverage": 7.9,
+      "voteCount": 21314,
+      "adult": false,
+      "backdropPath": "/lvOLivVeX3DVVcwfVkxKf0R22D8.jpg",
+      "genreIds": [
+        12,
+        14
+      ]
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/summary/add
+Content-Type: application/json
+
+{
+  "email": "tores.fernando.real@gmail.com",
+  "firstName": "Anton",
+  "lastName": "Sheverda",
+  "films": [
+    {
+      "originalLanguage": "en",
+      "originalTitle": "Harry Potter and the Prisoner of Azkaban",
+      "overview": "The story of a boy wizard from Hogwarts School",
+      "popularity": 240.854,
+      "posterPath": "/vkgM120mI0RH07njaFFlzG8wU4y.jpg",
+      "releaseDate": "2001-11-16",
+      "title": "Гарри Поттер и Узник Азкабана",
+      "video": false,
+      "voteAverage": 7.9,
+      "voteCount": 21314,
+      "adult": false,
+      "backdropPath": "/lvOLivVeX3DVVcwfVkxKf0R22D8.jpg",
+      "genreIds": [
+        12,
+        14
+      ]
+    },
+    {
+      "originalLanguage": "en",
+      "originalTitle": "Harry Potter and the Goblet of Fire",
+      "overview": "The story of a boy wizard from Hogwarts School",
+      "popularity": 240.854,
+      "posterPath": "/vkgM120mI0RH07njaFFlzG8wU4y.jpg",
+      "releaseDate": "2001-11-16",
+      "title": "Гарри Поттер и Кубок Огня",
+      "video": false,
+      "voteAverage": 7.9,
+      "voteCount": 21314,
+      "adult": false,
+      "backdropPath": "/lvOLivVeX3DVVcwfVkxKf0R22D8.jpg",
+      "genreIds": [
+        12,
+        14
+      ]
+    }
+  ]
+}
+
+###
+GET http://localhost:8080/summary/get/all
+
+###
+GET http://localhost:8080/summary/get/618e457a2c19eb396e406528
+
+###
+POST http://localhost:8080/summary/remove/618e441409094e69f632fa39
+
+###
+POST http://localhost:8080/summary/update
+Content-Type: application/json
+
+{
+  "id": "618e4709283223642a344347",
+  "email": "tores.com",
+  "firstName": "Anton",
+  "lastName": "Sheverda",
+  "films": [
+    {
+      "originalLanguage": "en",
+      "originalTitle": "Harry Potter and the Orden of Phoenix",
+      "overview": "",
+      "popularity": 240.854,
+      "posterPath": "/vkgM120mI0RH07njaFFlzG8wU4y.jpg",
+      "releaseDate": "2001-11-16",
+      "title": "Гарри Поттер и Орден Феникса",
+      "video": false,
+      "voteAverage": 7.9,
+      "voteCount": 21314,
+      "adult": false,
+      "backdropPath": "/lvOLivVeX3DVVcwfVkxKf0R22D8.jpg",
+      "genreIds": [
+        12,
+        14
+      ]
+    }
+  ]
+}
+
+###
+GET https://watchlater.cloud.technokratos.com/search/film?max-rating=100.0&min-rating=1.0&page=1&query=potter
+
+###
+GET http://localhost:8080/getFilms?max-rating=100.0&min-rating=1.0&page=1&query=harry potter and the goblet of fire
+
+###
+POST http://localhost:8080/summary/addFilms?max-rating=100.0&min-rating=1.0&page=1&query=harry potter and the goblet of fire
+Content-Type: application/json
+
+{
+  "id": "618e5072a00aa66b6bbad43f",
+  "email": "tores.fernando.real@gmail.com",
+  "firstName": "Anton",
+  "lastName": "Sheverda",
+  "films": []
+}
