@@ -137,7 +137,7 @@ POST http://localhost:8080/summary/addFilms?max-rating=100.0&min-rating=1.0&page
 Content-Type: application/json
 
 {
-  "id": "618e5072a00aa66b6bbad43f",
+  "id": "6194d7ba5423617f997ddf91",
   "email": "tores.fernando.real@gmail.com",
   "firstName": "Anton",
   "lastName": "Sheverda",
